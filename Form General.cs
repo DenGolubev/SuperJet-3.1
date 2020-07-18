@@ -21,8 +21,10 @@ namespace SuperJet_3._1
         // Cоздание формы main при нажатии на кнопку
         private void button1_Click(object sender, EventArgs e)
         {
-          Class_New_Form qwe =  new Class_New_Form("Main Menu Form", "Main Menu Form", true, true);
-            new menu_strip(qwe);
+         Class_New_Form Main_menu_form =  new Class_New_Form("Main Menu Form", "Main Menu Form", true);
+         Main_menu_form.IsMdiContainer = true;
+         new menu_strip(Main_menu_form);
+         
         }
 
         private void button2_Click(object sender, EventArgs e)
