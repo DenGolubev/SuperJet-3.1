@@ -11,8 +11,8 @@ namespace SuperJet_3._1
     {
         public menu_strip(Class_New_Form frm)
         {
-            ToolStripDropDownButton file = new ToolStripDropDownButton("File");
-            ToolStripMenuItem fileopen = new ToolStripMenuItem("File Open");
+            ToolStripDropDownButton file = new ToolStripDropDownButton("Файл");
+            ToolStripMenuItem fileopen = new ToolStripMenuItem("Открыть файл");
             fileopen.Click += Fileopen_Click;
             this.Items.Add(file);
             file.DropDownItems.Add(fileopen);
