@@ -13,6 +13,8 @@ namespace SuperJet_3._1
         public My_label(Class_New_Form frm, string text, int x, int y)
         {
             this.Text = text;
+            this.AutoSize = true;
+            this.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             this.Location = new Point(x, y);
             frm.Controls.Add(this);
         }

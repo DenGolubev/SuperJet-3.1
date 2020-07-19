@@ -30,14 +30,16 @@ namespace SuperJet_3._1
 
         private void Stuff_in_Click(object sender, EventArgs e)
         {
-            Class_New_Form frm =  new Class_New_Form("Stuff", "Принять сотрудника", 600, 800);
-            new My_Button(frm, "Принять", 650, 480, 100, 50);
+            Class_New_Form frm =  new Class_New_Form("Stuff", "Принять сотрудника", 300, 530);
+            new My_Button(frm, "Принять", 400, 200, 100, 50);
             new My_label(frm, "Фамилия", 20, 20);
-            new My_label(frm, "Имя", 20, 50);
-            new My_label(frm, "Отчество", 20, 80);
-            new My_textbox(frm, 120, 20);
-            new My_textbox(frm, 120, 50);
-            new My_textbox(frm, 120, 80);
+            new My_label(frm, "Имя", 20, 60);
+            new My_label(frm, "Отчество", 20, 100);
+            new My_label(frm, "Табельный номер", 20, 140);
+            new My_textbox(frm, 250, 20, 250);
+            new My_textbox(frm, 250, 60, 250);
+            new My_textbox(frm, 250, 100, 250);
+            new My_textbox(frm, 250, 140, 250);
         }
 
         private void Fileopen_Click(object sender, EventArgs e)
