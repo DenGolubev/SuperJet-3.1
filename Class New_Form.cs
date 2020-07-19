@@ -25,13 +25,12 @@ namespace SuperJet_3._1
             this.Show();
         }
 
-        public Class_New_Form(string name, string text, int h, int w, Class_New_Form frm)
+        public Class_New_Form(string name, string text, int h, int w)
         {
             this.Name = name;
             this.Text = text;
             this.Height = h;
             this.Width = w;
-            this.MdiParent = frm;
             this.Show();
         }
 
