@@ -33,6 +33,5 @@ namespace SuperJet_3._1
             this.Width = w;
             this.Show();
         }
-
     }
 }

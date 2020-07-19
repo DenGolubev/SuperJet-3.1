@@ -9,7 +9,6 @@ namespace SuperJet_3._1
 {
     class menu_strip: MenuStrip
     {
-       
         public menu_strip(Class_New_Form frm)
         {
             ToolStripDropDownButton stuff = new ToolStripDropDownButton("Сотрудники");
@@ -31,6 +30,7 @@ namespace SuperJet_3._1
 
         private void Stuff_in_Click(object sender, EventArgs e)
         {
+
             Class_New_Form frm =  new Class_New_Form("Stuff", "Принять сотрудника", 300, 530);
             new My_Button(frm, "Принять", 400, 200, 100, 50);
             new My_label(frm, "Фамилия", 20, 20);
