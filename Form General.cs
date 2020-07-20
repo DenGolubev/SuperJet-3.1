@@ -18,18 +18,12 @@ namespace SuperJet_3._1
            InitializeComponent();
             
         }
-        public void creat_mdi_form()
-        {
-            Form new_mdi = new Form_MDI();
-            new_mdi.Show();
-            
-        }
+       
         // Cоздание формы main при нажатии на кнопку
         private void button1_Click(object sender, EventArgs e)
         {
-           creat_mdi_form();
-         //Class_New_Form Main_menu_form =  new Class_New_Form("Main Menu Form", "Main Menu Form", true, true);
-         //new menu_strip(Main_menu_form);
+           Class_main_MDI_form.Form_MDI.Show();
+           new menu_strip(Class_main_MDI_form.Form_MDI);
           
         }
 

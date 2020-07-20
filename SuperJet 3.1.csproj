@@ -49,19 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\My_Button.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Form MDI.cs">
+    <Compile Include="Class Form_Stuff_out.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form MDI.Designer.cs">
-      <DependentUpon>Form MDI.cs</DependentUpon>
+    <Compile Include="Class main_MDI_form.cs" />
+    <Compile Include="Class MDI_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\My_Button.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Menu strip MDI form.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Class New_Form.cs">
+    <Compile Include="Class Form_Stuff_in.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form General.cs">
@@ -83,9 +84,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form General.resx">
       <DependentUpon>Form General.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form MDI.resx">
-      <DependentUpon>Form MDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

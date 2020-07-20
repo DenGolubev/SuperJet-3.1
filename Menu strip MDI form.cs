@@ -33,47 +33,21 @@ namespace SuperJet_3._1
 
         private void Stuff_out_Click(object sender, EventArgs e)
         {
-            Class_New_Form frm = new Class_New_Form("Stuff_out", "Уволить сотрудника", 300, 530, Form_MDI.ActiveForm);
-            Button btn = new My_Button(frm, "Уволить", 400, 200, 100, 50);
-            //new My_Button(frm, "Уволить", 400, 200, 100, 50);
-            new My_label(frm, "Фамилия", 20, 20);
-            new My_label(frm, "Имя", 20, 60);
-            new My_label(frm, "Отчество", 20, 100);
-            new My_label(frm, "Табельный номер", 20, 140);
-            new My_textbox(frm, 250, 20, 250);
-            new My_textbox(frm, 250, 60, 250);
-            new My_textbox(frm, 250, 100, 250);
-            new My_textbox(frm, 250, 140, 250);
-            btn.Click += Btn_Click1;
+            Form Stuff_out = new Class_Form_Stuff_out();
+            Stuff_out.MdiParent = Class_main_MDI_form.Form_MDI;
+            Stuff_out.Show();
         }
 
-        private void Btn_Click1(object sender, EventArgs e)
-        {
-            MessageBox.Show("Сотрудник уволен");
-        }
-
+        
         private void Stuff_in_Click(object sender, EventArgs e)
         {
-
-            Class_New_Form frm =  new Class_New_Form("Stuff_in", "Принять сотрудника", 300, 530, Form_MDI.ActiveForm);
-            Button btn = new My_Button(frm, "Принять", 400, 200, 100, 50);
-            //new My_Button(frm, "Принять", 400, 200, 100, 50);
-            new My_label(frm, "Фамилия", 20, 20);
-            new My_label(frm, "Имя", 20, 60);
-            new My_label(frm, "Отчество", 20, 100);
-            new My_label(frm, "Табельный номер", 20, 140);
-            new My_textbox(frm, 250, 20, 250);
-            new My_textbox(frm, 250, 60, 250);
-            new My_textbox(frm, 250, 100, 250);
-            new My_textbox(frm, 250, 140, 250);
-            btn.Click += Btn_Click;
+            Form Stuff_in = new Class_Form_Stuff_in();
+            Stuff_in.MdiParent = Class_main_MDI_form.Form_MDI;
+            Stuff_in.Show();
+            
         }
 
-        private void Btn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Сотрудник принят на работу");
-        }
-
+        
         private void Fileopen_Click(object sender, EventArgs e)
         {
            new  Open_File_Dialog();
