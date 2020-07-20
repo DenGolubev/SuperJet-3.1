@@ -11,6 +11,11 @@ namespace SuperJet_3._1
     {
         public menu_strip(Form frm)
         {
+            ToolStripDropDownButton file = new ToolStripDropDownButton("Файл");
+            ToolStripMenuItem fileopen = new ToolStripMenuItem("Открыть файл");
+            fileopen.Click += Fileopen_Click;
+            file.DropDownItems.Add(fileopen);
+
             ToolStripDropDownButton stuff = new ToolStripDropDownButton("Сотрудники");
             ToolStripMenuItem stuff_in = new ToolStripMenuItem("Принять сотрудника");
             ToolStripMenuItem stuff_out = new ToolStripMenuItem("Уволить сотрудника");
@@ -18,11 +23,6 @@ namespace SuperJet_3._1
             stuff.DropDownItems.Add(stuff_out);
             stuff_in.Click += Stuff_in_Click;
             stuff_out.Click += Stuff_out_Click;
-
-            ToolStripDropDownButton file = new ToolStripDropDownButton("Файл");
-            ToolStripMenuItem fileopen = new ToolStripMenuItem("Открыть файл");
-            fileopen.Click += Fileopen_Click;
-            file.DropDownItems.Add(fileopen);
 
             this.Items.Add(file);
             this.Items.Add(stuff);
