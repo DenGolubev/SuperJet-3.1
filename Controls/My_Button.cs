@@ -17,13 +17,8 @@ namespace SuperJet_3._1
             this.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             this.Location = new Point(x,y);
             this.Size = new Size(h, w);
-            this.Click += Btn_Click;
             frm.Controls.Add(this);
         }
 
-        private void Btn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Сотрудник принят на работу");
-        }
     }
 }

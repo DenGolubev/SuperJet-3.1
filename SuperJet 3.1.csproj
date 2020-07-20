@@ -58,7 +58,7 @@
     <Compile Include="Form MDI.Designer.cs">
       <DependentUpon>Form MDI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main form menu strip.cs">
+    <Compile Include="Menu strip MDI form.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Class New_Form.cs">
