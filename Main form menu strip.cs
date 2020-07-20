@@ -32,6 +32,7 @@ namespace SuperJet_3._1
         {
 
             Class_New_Form frm =  new Class_New_Form("Stuff", "Принять сотрудника", 300, 530);
+            frm.MdiParent = new Class_New_Form("Main Menu Form", "Main Menu Form", true, true);
             new My_Button(frm, "Принять", 400, 200, 100, 50);
             new My_label(frm, "Фамилия", 20, 20);
             new My_label(frm, "Имя", 20, 60);
