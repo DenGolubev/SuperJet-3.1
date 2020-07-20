@@ -52,6 +52,12 @@
     <Compile Include="Controls\My_Button.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Form MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form MDI.Designer.cs">
+      <DependentUpon>Form MDI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main form menu strip.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form General.resx">
       <DependentUpon>Form General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form MDI.resx">
+      <DependentUpon>Form MDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
