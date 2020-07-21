@@ -17,8 +17,6 @@ namespace SuperJet_3._1
             this.WindowState = FormWindowState.Normal;
             this.Size = new System.Drawing.Size(800, 600);
             Button btn = new My_Button(this, "Сформировать", 580, 470, 180, 70);
-            ComboBox cb_box = new My_Combobox(this, 200, 50, 300, 50);
-            new My_label(this, "Сотрудник", 20, 50);
             btn.Click += Btn_Click;
 
         }
