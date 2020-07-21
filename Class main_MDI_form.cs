@@ -9,7 +9,8 @@ namespace SuperJet_3._1
 {
    static class Class_main_MDI_form
     {
-        public static Form Form_MDI = new Class_MDI_Form("Main Menu Form", "Основная форма SuperJet", true, true);
+        public static Form Form_MDI = new Class_MDI_Form();
+        
     }
 
 }

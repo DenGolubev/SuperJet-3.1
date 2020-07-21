@@ -11,8 +11,8 @@ namespace SuperJet_3._1
     {
         public Class_BaseForm()
         {
-            this.IsMdiContainer = true;
-            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.Fixed3D;
+            this.MdiParent = ActiveForm;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SuperJet_3._1.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,9 +14,7 @@ namespace SuperJet_3._1
             this.Name = "Report_stuff";  
             this.Text = "Отчет по сотруднику"; // + Combobox.value
             this.Size = new System.Drawing.Size(800, 600);
-            this.MdiParent = ActiveForm;
             
-
         }
     }
 }

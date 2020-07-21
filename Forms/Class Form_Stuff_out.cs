@@ -7,16 +7,13 @@ using System.Windows.Forms;
 
 namespace SuperJet_3._1
 {
-    class Class_Form_Stuff_out: Form
+    class Class_Form_Stuff_out: Class_BaseForm
     {
         public Class_Form_Stuff_out()
         {
             this.Name = "Form Staff out";
             this.Text = "Form Staff out";
-            this.FormBorderStyle = FormBorderStyle.Fixed3D;
-            this.Height = 300;
-            this.Width = 530;
-            this.MdiParent = ActiveForm;
+            this.Size = new System.Drawing.Size(530, 300);
             Button btn = new My_Button(this, "Уволить", 400, 200, 100, 50);
             new My_label(this, "Фамилия", 20, 20);
             new My_label(this, "Имя", 20, 60);
