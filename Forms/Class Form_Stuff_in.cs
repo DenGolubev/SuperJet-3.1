@@ -16,6 +16,7 @@ namespace SuperJet_3._1
             this.FormBorderStyle = FormBorderStyle.Fixed3D;
             this.Height = 300;
             this.Width = 530;
+            this.MdiParent = ActiveForm;
             Button btn = new My_Button(this, "Принять", 400, 200, 100, 50);
             new My_label(this, "Фамилия", 20, 20);
             new My_label(this, "Имя", 20, 60);
