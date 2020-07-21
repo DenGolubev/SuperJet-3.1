@@ -52,6 +52,7 @@
     <Compile Include="Controls\My_Button.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Databases\MSSQLConnector.cs" />
     <Compile Include="Main form menu strip.cs">
       <SubType>Component</SubType>
     </Compile>
