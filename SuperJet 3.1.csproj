@@ -49,11 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class Form_Stuff_out.cs">
+    <Compile Include="Controls\My_Combobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Class Form_report_stuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class Form_Stuff_out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class Form_report_svod.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Class main_MDI_form.cs" />
-    <Compile Include="Class MDI_Form.cs">
+    <Compile Include="Forms\Class MDI_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\My_Button.cs">
@@ -62,13 +71,13 @@
     <Compile Include="Menu strip MDI form.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Class Form_Stuff_in.cs">
+    <Compile Include="Forms\Class Form_Stuff_in.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form General.cs">
+    <Compile Include="Forms\Form General.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form General.Designer.cs">
+    <Compile Include="Forms\Form General.Designer.cs">
       <DependentUpon>Form General.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Open File Dialog.cs">
@@ -82,7 +91,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form General.resx">
+    <EmbeddedResource Include="Forms\Form General.resx">
       <DependentUpon>Form General.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

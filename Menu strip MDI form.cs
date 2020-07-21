@@ -24,11 +24,34 @@ namespace SuperJet_3._1
             stuff_in.Click += Stuff_in_Click;
             stuff_out.Click += Stuff_out_Click;
 
+            ToolStripDropDownButton report = new ToolStripDropDownButton("Отчеты");
+            ToolStripMenuItem report_svod = new ToolStripMenuItem("Сводный отчет по площадке");
+            ToolStripMenuItem report_stuff = new ToolStripMenuItem("Сводный отчет по сотруднику");
+            report.DropDownItems.Add(report_svod);
+            report.DropDownItems.Add(report_stuff);
+            report_svod.Click += Report_svod_Click;
+            report_stuff.Click += Report_stuff_Click;
+
             this.Items.Add(file);
             this.Items.Add(stuff);
-            
+            this.Items.Add(report);
+
 
             frm.Controls.Add(this);
+        }
+
+        private void Report_stuff_Click(object sender, EventArgs e)
+        {
+            Form Form_report_stuff = new Class_Form_report_stuff();
+            Form_report_stuff.MdiParent = Class_main_MDI_form.Form_MDI;
+            Form_report_stuff.Show();
+        }
+
+        private void Report_svod_Click(object sender, EventArgs e)
+        {
+            Form Form_report_svod = new Class_Form_report_svod();
+            Form_report_svod.MdiParent = Class_main_MDI_form.Form_MDI;
+            Form_report_svod.Show();
         }
 
         private void Stuff_out_Click(object sender, EventArgs e)
