@@ -94,6 +94,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stuff\Create Stuff.cs" />
+    <Compile Include="Stuff\Stuffs.cs" />
     <EmbeddedResource Include="Forms\Form General.resx">
       <DependentUpon>Form General.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,5 +121,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
