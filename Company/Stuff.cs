@@ -10,7 +10,7 @@ namespace SuperJet_3._1.Company
 
     public class Stuff: Company
     {
-        public static int Stuff_count = 1;
+        public static int Stuff_count = 0;
         public string Stuff_Area_name { get; set; }
         public string Stuff_f_name { get; set; }
         public string Stuff_m_name { get; set; }
