@@ -16,7 +16,6 @@ namespace SuperJet_3._1
             this.Text = "Отчет по сотруднику"; // + Combobox.value
             this.Size = new System.Drawing.Size(800, 600);
             ComboBox cb_box = new My_Combobox(this, 200, 50, 300, 50);
-            cb_box.Items.
             new My_label(this, "Сотрудник", 20, 50);
 
         }
