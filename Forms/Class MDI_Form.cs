@@ -15,7 +15,19 @@ namespace SuperJet_3._1
             this.Text = "Основная форма SuperJet";
             this.IsMdiContainer = true;
             this.WindowState = FormWindowState.Maximized;
+            this.FormClosing += Class_MDI_Form_FormClosing;
             this.Show();
+        }
+
+        // Событие при закрытиии формы, закрывающее активный экземпляр класса и дает возможность обойти исключение ObjectDisposedException, которое вызывается повторное открытие формы вызывает
+        private void Class_MDI_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                Hide();
+            }
         }
     }
 }

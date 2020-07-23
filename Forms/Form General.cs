@@ -22,8 +22,17 @@ namespace SuperJet_3._1
         // Cоздание формы main при нажатии на кнопку
         private void button1_Click(object sender, EventArgs e)
         {
-            Class_main_MDI_form.Form_MDI.Show();
-            new menu_strip(Class_main_MDI_form.Form_MDI);
+            try
+            {
+                Class_main_MDI_form.Form_MDI.Show();
+                new menu_strip(Class_main_MDI_form.Form_MDI);
+                
+            }
+            catch(ObjectDisposedException msg)
+            {
+                MessageBox.Show(msg.ObjectName);
+            }
+            
 
         }
 

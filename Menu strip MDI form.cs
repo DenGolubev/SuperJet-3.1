@@ -38,26 +38,30 @@ namespace SuperJet_3._1
 
 
             frm.Controls.Add(this);
+            frm.FormClosing += Frm_FormClosing;
+        }
+
+        // Удаление экземпляра меню при закрытии MDI формы
+        private void Frm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
         }
 
         private void Report_stuff_Click(object sender, EventArgs e)
         {
             Form Form_report_stuff = new Class_Form_report_stuff();
-            //Form_report_stuff.MdiParent = Class_main_MDI_form.Form_MDI;
             Form_report_stuff.Show();
         }
 
         private void Report_svod_Click(object sender, EventArgs e)
         {
             Form Form_report_svod = new Class_Form_report_svod();
-            //Form_report_svod.MdiParent = Class_main_MDI_form.Form_MDI;
             Form_report_svod.Show();
         }
 
         private void Stuff_out_Click(object sender, EventArgs e)
         {
             Form Stuff_out = new Class_Form_Stuff_out();
-            //Stuff_out.MdiParent = Class_main_MDI_form.Form_MDI;
             Stuff_out.Show();
         }
 
@@ -65,7 +69,6 @@ namespace SuperJet_3._1
         private void Stuff_in_Click(object sender, EventArgs e)
         {
             Form Stuff_in = new Class_Form_Stuff_in();
-            //Stuff_in.MdiParent = Class_main_MDI_form.Form_MDI;
             Stuff_in.Show();
             
         }
