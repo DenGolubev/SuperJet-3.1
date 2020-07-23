@@ -46,9 +46,17 @@ namespace SuperJet_3._1
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            Stuff sotrudnik = new Stuff { Stuff_l_name = textbox1.Text, Stuff_f_name = textbox2.Text, Stuff_m_name = textbox3.Text, Staff_tab_name = Convert.ToInt32( textbox4.Text)};
-            textbox5.Text = Convert.ToString( Stuff.Stuff_count);
-            sotrudnik.Display();
+            try
+            {
+                Stuff sotrudnik = new Stuff { Stuff_l_name = textbox1.Text, Stuff_f_name = textbox2.Text, Stuff_m_name = textbox3.Text, Staff_tab_name = Convert.ToInt32(textbox4.Text) };
+                textbox5.Text = Convert.ToString(Stuff.Stuff_count);
+                sotrudnik.Display();
+            }
+            catch(Exception msg)
+            {
+                MessageBox.Show(msg.Message);
+            }
+            
             
             //MessageBox.Show("Сотрудник принят на работу");
         }
