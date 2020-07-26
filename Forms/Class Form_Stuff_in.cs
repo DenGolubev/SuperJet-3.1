@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using SuperJet_3._1.Company;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace SuperJet_3._1
 {
@@ -50,8 +51,16 @@ namespace SuperJet_3._1
             {
                 Stuff sotrudnik = new Stuff();
                 sotrudnik.Staff_tab_name = Convert.ToInt32(textbox4.Text);
+                if (check_stuff_exists() == true)
+                {
+                    MessageBox.Show("Такой сотрудник уже есть");
+                }
+                else
+                {
+                    sotrudnik.Display(textbox1.Text, textbox2.Text, textbox3.Text, sotrudnik.Staff_tab_name);
+                }
                 
-                sotrudnik.Display(textbox1.Text, textbox2.Text, textbox3.Text, sotrudnik.Staff_tab_name);
+                
               
             }
             catch(Exception msg)
@@ -59,6 +68,49 @@ namespace SuperJet_3._1
                 MessageBox.Show(msg.Message);
             }
                        
+        }
+
+        private bool check_stuff_exists()
+        {
+
+            List<Stuff> list_stuff = new List<Stuff>();
+
+            Stuff s1 = new Stuff();
+            Stuff s2= new Stuff();
+            Stuff s3 = new Stuff();
+
+            s1.Stuff_f_name = "Ivan";
+            s1.Stuff_l_name = "Axe";
+            s1.Stuff_m_name = "1";
+            s1.Staff_tab_name = 203394;
+
+            s2.Stuff_f_name = "Ivan";
+            s2.Stuff_l_name = "Axe";
+            s2.Stuff_m_name = "2";
+            s2.Staff_tab_name = 203394;
+
+            s3.Stuff_f_name = "Ivan";
+            s3.Stuff_l_name = "Axe";
+            s3.Stuff_m_name = "3";
+            s3.Staff_tab_name = 203394;
+
+
+
+            list_stuff.Add(s1);
+            list_stuff.Add(s2);
+            list_stuff.Add(s3);
+
+            foreach( Stuff sl in list_stuff)
+            {
+                if (sl.Staff_tab_name == Convert.ToInt32( textbox4.Text))
+                {
+                    return true;
+                }
+                
+            }
+
+
+            return false;
         }
     }
 }

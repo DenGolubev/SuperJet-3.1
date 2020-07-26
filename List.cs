@@ -11,8 +11,8 @@ namespace SuperJet_3._1
     {
        public List_stuff()
         {
-            var list_stuff_in = new List<String>();
-            //list_stuff_in.Add(Stuff.Stuf_in);
+            var list_stuff_in = new List<Stuff>();
+            //list_stuff_in.Add(Stuff);
 
         }
     }
