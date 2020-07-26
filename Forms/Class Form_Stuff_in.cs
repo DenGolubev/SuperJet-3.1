@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SuperJet_3._1.Company;
+using System.IO;
 
 namespace SuperJet_3._1
 {
@@ -15,7 +13,7 @@ namespace SuperJet_3._1
         TextBox textbox3;
         TextBox textbox4;
         TextBox textbox5;
-
+        
         public Class_Form_Stuff_in()
         {
             this.Name = "Form Staff in";
@@ -37,28 +35,31 @@ namespace SuperJet_3._1
             btn.Click += Btn_Click;
             this.Load += Class_Form_Stuff_in_Load;
             
+
         }
 
         private void Class_Form_Stuff_in_Load(object sender, EventArgs e)
         {
-            textbox5.Text = Convert.ToString(Stuff.Stuff_count);
+           
+            // textbox5.Text = Convert.ToString(Stuff.Stuff_count);
         }
 
         private void Btn_Click(object sender, EventArgs e)
         {
             try
             {
-                Stuff sotrudnik = new Stuff { Stuff_l_name = textbox1.Text, Stuff_f_name = textbox2.Text, Stuff_m_name = textbox3.Text, Staff_tab_name = Convert.ToInt32(textbox4.Text) };
-                textbox5.Text = Convert.ToString(Stuff.Stuff_count);
-                sotrudnik.Display();
+                Stuff sotrudnik = new Stuff();
+                sotrudnik.Staff_tab_name = Convert.ToInt32(textbox4.Text);
+                
+                sotrudnik.Display(textbox1.Text, textbox2.Text, textbox3.Text, sotrudnik.Staff_tab_name);
+              
             }
             catch(Exception msg)
             {
                 MessageBox.Show(msg.Message);
             }
-            
-            
-            //MessageBox.Show("Сотрудник принят на работу");
+                       
         }
     }
 }
+
