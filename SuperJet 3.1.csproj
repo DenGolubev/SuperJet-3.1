@@ -75,6 +75,7 @@
     <Compile Include="Controls\My_Button.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Graphic\Line.cs" />
     <Compile Include="List.cs" />
     <Compile Include="Menu strip MDI form.cs">
       <SubType>Component</SubType>
@@ -99,6 +100,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Class Form_report_stuff.resx">
+      <DependentUpon>Class Form_report_stuff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form General.resx">
       <DependentUpon>Form General.cs</DependentUpon>
     </EmbeddedResource>
