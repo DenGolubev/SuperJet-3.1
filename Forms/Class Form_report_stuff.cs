@@ -4,7 +4,6 @@ using System.Windows.Forms;
 using System.IO;
 using SuperJet_3._1.Graphic;
 using System.Drawing;
-using SuperJet_3._1.Graphic;
 
 namespace SuperJet_3._1
 {
@@ -12,8 +11,11 @@ namespace SuperJet_3._1
     {
        
 
-        public Class_Form_report_stuff()
+        public Class_Form_report_stuff() //Карточка эффективности сотрудника
         {
+            //KPI — это коэффициент, определяющий эффективность работы того или иного предприятия: насколько оно удачно функционирует, достигает ли поставленных целей.
+            //Расшифровка этой аббревиатуры выглядит следующим образом — Key Performance Indicators, что на русский принято переводить как «ключевые показатели эффективности».
+
             this.Name = "Report_stuff";  
             this.Text = "Отчет по сотруднику"; // + Combobox.value
             this.Size = new System.Drawing.Size(800, 600);
