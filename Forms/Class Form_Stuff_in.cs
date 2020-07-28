@@ -25,11 +25,11 @@ namespace SuperJet_3._1
             new My_label(this, "Отчество", 16F, Color.Black, 20, 100);
             new My_label(this, "Табельный номер", 16F, Color.Black, 20, 140);
             new My_label(this, "Всего сотрудников", 16F, Color.Black, 20, 210);
-            textbox1 = new My_textbox(this, 250, 20, 250);
-            textbox2 = new My_textbox(this, 250, 60, 250);
-            textbox3 = new My_textbox(this, 250, 100, 250);
-            textbox4 = new My_textbox(this, 250, 140, 250);
-            textbox5 = new My_textbox(this, 250, 210, 50);
+            textbox1 = new My_textbox(this, true, 250, 20, 250);
+            textbox2 = new My_textbox(this, true, 250, 60, 250);
+            textbox3 = new My_textbox(this, true, 250, 100, 250);
+            textbox4 = new My_textbox(this, true, 250, 140, 250);
+            textbox5 = new My_textbox(this, true, 250, 210, 50);
             textbox5.Enabled = false;
             textbox5.Text = Convert.ToString(0);
             btn.Click += Btn_Click;

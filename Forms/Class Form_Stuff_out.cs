@@ -16,10 +16,10 @@ namespace SuperJet_3._1
             new My_label(this, "Имя", 16F, Color.Black, 20, 60);
             new My_label(this, "Отчество", 16F, Color.Black, 20, 100);
             new My_label(this, "Табельный номер", 16F, Color.Black, 20, 140);
-            new My_textbox(this, 250, 20, 250);
-            new My_textbox(this, 250, 60, 250);
-            new My_textbox(this, 250, 100, 250);
-            new My_textbox(this, 250, 140, 250);
+            new My_textbox(this, true, 250, 20, 250);
+            new My_textbox(this, true, 250, 60, 250);
+            new My_textbox(this, true, 250, 100, 250);
+            new My_textbox(this, true, 250, 140, 250);
             btn.Click += Btn_Click;
             
 

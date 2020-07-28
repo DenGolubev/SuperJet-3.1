@@ -18,8 +18,8 @@ namespace SuperJet_3._1
             this.Text = "Отчет по сотруднику"; // + Combobox.value
             this.Size = new Size(800, 600);
             this.Paint += Class_Form_report_stuff_Paint;
-            My_Combobox cb_box = new My_Combobox(this, 200, 50, 300, 50);
-            new My_label(this, "Сотрудник", 16F, Color.Black, 20, 50);
+            My_Combobox cb_box = new My_Combobox(this, 300, 50, 300, 50);
+            new My_label(this, "Сотрудник", 16F, Color.Black, 150, 50);
             
         }
 
