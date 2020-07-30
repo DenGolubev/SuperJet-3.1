@@ -50,11 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Company\Stuff.cs" />
+    <Compile Include="Controls\My_listbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\Class BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\My_Combobox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Class Form_accepting_orders.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Class Form_report_stuff.cs">
       <SubType>Form</SubType>
@@ -72,6 +78,9 @@
     <Compile Include="Controls\My_Button.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Graphic\KPI_Table.cs" />
+    <Compile Include="Graphic\Line.cs" />
+    <Compile Include="List.cs" />
     <Compile Include="Menu strip MDI form.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -95,6 +104,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Class Form_report_stuff.resx">
+      <DependentUpon>Class Form_report_stuff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form General.resx">
       <DependentUpon>Form General.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tables\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

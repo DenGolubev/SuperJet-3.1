@@ -10,8 +10,9 @@ namespace SuperJet_3._1
 {
     class My_textbox: TextBox
     {
-        public My_textbox(Form frm, int x, int y, int w)
+        public My_textbox(Form frm, bool status_textbox, int x, int y, int w)
         {
+            this.Enabled = status_textbox;
             this.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             this.Width = w;
             this.Location = new Point(x, y);
