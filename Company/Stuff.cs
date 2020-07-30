@@ -11,8 +11,6 @@ namespace SuperJet_3._1.Company
 
     public class Stuff
     {
-        public string Stuf_in { get; set; } // Сотрудник устроенный на работу
-        public int Stuff_ID { get; set; }
         public string Stuff_f_name { get; set; }
         public string Stuff_m_name { get; set; }
         public string Stuff_l_name { get; set; }
