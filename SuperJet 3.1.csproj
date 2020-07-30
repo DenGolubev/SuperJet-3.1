@@ -59,6 +59,9 @@
     <Compile Include="Controls\My_Combobox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\Class Form_accepting_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Class Form_report_stuff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tables\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

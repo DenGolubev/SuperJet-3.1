@@ -16,6 +16,11 @@ namespace SuperJet_3._1
             fileopen.Click += Fileopen_Click;
             file.DropDownItems.Add(fileopen);
 
+            ToolStripDropDownButton order = new ToolStripDropDownButton("Наряды");
+            ToolStripMenuItem accept_order = new ToolStripMenuItem("Принять наряды");
+            order.DropDownItems.Add(accept_order);
+            accept_order.Click += Accept_order_Click;
+
             ToolStripDropDownButton stuff = new ToolStripDropDownButton("Сотрудники");
             ToolStripMenuItem stuff_in = new ToolStripMenuItem("Принять сотрудника");
             ToolStripMenuItem stuff_out = new ToolStripMenuItem("Уволить сотрудника");
@@ -33,12 +38,19 @@ namespace SuperJet_3._1
             report_stuff.Click += Report_stuff_Click;
 
             this.Items.Add(file);
+            this.Items.Add(order);
             this.Items.Add(stuff);
             this.Items.Add(report);
 
 
             frm.Controls.Add(this);
             frm.FormClosing += Frm_FormClosing;
+        }
+
+        private void Accept_order_Click(object sender, EventArgs e)
+        {
+            Form Form_accept_order = new Class_Form_accepting_orders();
+            Form_accept_order.Show();
         }
 
         // Удаление экземпляра меню при закрытии MDI формы
