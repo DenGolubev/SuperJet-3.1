@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SuperJet_3._1
@@ -32,13 +28,28 @@ namespace SuperJet_3._1
             report_svod.Click += Report_svod_Click;
             report_stuff.Click += Report_stuff_Click;
 
+            ToolStripDropDownButton order = new ToolStripDropDownButton("Наряды");
+            ToolStripMenuItem accepting_order = new ToolStripMenuItem("Прием нарядов");
+            accepting_order.Click += Accepting_order_Click;
+            order.DropDownItems.Add(accepting_order);
+
+            
+
             this.Items.Add(file);
+            this.Items.Add(order);
             this.Items.Add(stuff);
             this.Items.Add(report);
 
 
+
             frm.Controls.Add(this);
             frm.FormClosing += Frm_FormClosing;
+        }
+
+        private void Accepting_order_Click(object sender, EventArgs e)
+        {
+            Form Form_order_in = new Class_Form_accepting_orders();
+            Form_order_in.Show();
         }
 
         // Удаление экземпляра меню при закрытии MDI формы

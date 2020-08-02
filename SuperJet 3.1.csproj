@@ -36,6 +36,8 @@
     <StartupObject>SuperJet_3._1.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +49,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Company\Stuff.cs" />
@@ -58,6 +61,9 @@
     </Compile>
     <Compile Include="Controls\My_Combobox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Class Form_accepting_orders.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Class Form_report_stuff.cs">
       <SubType>Form</SubType>

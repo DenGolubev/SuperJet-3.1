@@ -23,7 +23,7 @@ namespace SuperJet_3._1
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
