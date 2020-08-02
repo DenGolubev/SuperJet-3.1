@@ -49,66 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Company\Stuff.cs" />
-    <Compile Include="Controls\My_listbox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms\Class BaseForm.cs">
+    <Compile Include="Company\Employee.cs" />
+    <Compile Include="Forms\General.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\My_Combobox.cs">
-      <SubType>Component</SubType>
+    <Compile Include="Forms\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Class Form_accepting_orders.cs">
+    <Compile Include="Forms\MDI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Class Form_report_stuff.cs">
+    <Compile Include="Forms\MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Stuff_in.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Class Form_Stuff_out.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Class Form_report_svod.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class main_MDI_form.cs" />
-    <Compile Include="Forms\Class MDI_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls\My_Button.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Graphic\KPI_Table.cs" />
-    <Compile Include="Graphic\Line.cs" />
-    <Compile Include="List.cs" />
-    <Compile Include="Menu strip MDI form.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms\Class Form_Stuff_in.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form General.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form General.Designer.cs">
-      <DependentUpon>Form General.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Open File Dialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls\My_label.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\My_textbox.cs">
-      <SubType>Component</SubType>
+    <Compile Include="Forms\Stuff_in.Designer.cs">
+      <DependentUpon>Stuff_in.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Class Form_report_stuff.resx">
-      <DependentUpon>Class Form_report_stuff.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\General.resx">
+      <DependentUpon>General.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form General.resx">
-      <DependentUpon>Form General.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Stuff_in.resx">
+      <DependentUpon>Stuff_in.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
