@@ -24,8 +24,8 @@ namespace SuperJet_3._1.Company
             Stuff_m_name = otchestvo;
             Staff_tab_name = namber;
 
-            Stuf_in = Stuff_l_name +" "+ Stuff_f_name + " " + Stuff_m_name + " " + Convert.ToString(Staff_tab_name);
-            MessageBox.Show(Stuf_in);
+            //Stuf_in = Stuff_l_name +" "+ Stuff_f_name + " " + Stuff_m_name + " " + Convert.ToString(Staff_tab_name);
+            //MessageBox.Show(Stuf_in);
         }
         
     }
