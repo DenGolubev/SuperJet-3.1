@@ -16,7 +16,7 @@ namespace SuperJet_3._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_General());
+            Application.Run(new Forms.General());
 
         }
     }
