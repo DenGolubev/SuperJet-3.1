@@ -2,12 +2,13 @@
 using System.Windows.Forms;
 using SuperJet_3._1.Graphic;
 using System.Drawing;
+using System;
 
 namespace SuperJet_3._1
 {
     class Class_Form_report_stuff: Class_Form_report_svod
     {
-       
+        TextBox[] textBoxes;
 
         public Class_Form_report_stuff() //Карточка эффективности сотрудника
         {
@@ -20,7 +21,9 @@ namespace SuperJet_3._1
             this.Paint += Class_Form_report_stuff_Paint;
             this.Load += Class_Form_report_stuff_Load;
             
-            
+
+
+
         }
 
         private void Class_Form_report_stuff_Load(object sender, System.EventArgs e)

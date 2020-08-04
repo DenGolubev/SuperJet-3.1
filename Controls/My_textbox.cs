@@ -18,5 +18,29 @@ namespace SuperJet_3._1
             this.Location = new Point(x, y);
             frm.Controls.Add(this);
         }
+
+    }
+
+    class My_textboxArray : TextBox
+    {
+        private TextBox[] textBox;
+
+        public My_textboxArray(Form frm, int count_textbox)
+        {
+            int count = count_textbox;
+            textBox = new TextBox[count];
+            for (int i = 1; i < count; i++)
+            {
+                Random rnd = new Random();
+                int x = rnd.Next(10, 300);
+                int y = rnd.Next(50, 200);
+                var t = new TextBox();
+                t.Location = new Point(x, y);
+                t.Width = 300;
+                frm.Controls.Add(t);
+
+            }
+
+        }
     }
 }
