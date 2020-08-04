@@ -1,6 +1,5 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
-using System;
 using SuperJet_3._1.Graphic;
 
 namespace SuperJet_3._1

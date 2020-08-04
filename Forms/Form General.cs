@@ -1,20 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SuperJet_3._1
 {
     public partial class Form_General: Form
     {
-               
+        private MenuStrip menuStrip1;
         public Form_General()
         {
+            
            InitializeComponent();
             
         }
@@ -25,8 +20,11 @@ namespace SuperJet_3._1
             try
             {
                 Class_main_MDI_form.Form_MDI.Show();
-                new menu_strip(Class_main_MDI_form.Form_MDI);
-                
+                menuStrip1 = new menu_strip(Class_main_MDI_form.Form_MDI);
+                menuStrip1.BackColor = Color.Bisque;
+                menuStrip1.Height = 20;
+                menuStrip1.Font = new Font("Arial", 18F, FontStyle.Italic, GraphicsUnit.Point, ((byte)(0)));
+
             }
             catch(ObjectDisposedException msg)
             {
