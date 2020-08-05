@@ -32,7 +32,7 @@ namespace SuperJet_3._1
             {
                 string a = "Привет";
                 textBoxes_array[i] = new My_textboxArray(this, 20, textBoxes_array.Length, 300, 10, 0, 50, 300);
-                MessageBox.Show( Convert.ToString( textBoxes_array[i].Name));
+                
             }
 
             for (int i = 0; i < labels_array.Length; i++)

@@ -31,15 +31,15 @@ namespace SuperJet_3._1
             textBox = new TextBox[count];
             for (int i = 0; i < count; i++)
             {
-                var t = new TextBox();
+                textBox[i] = new TextBox();
                 x = x+x_step;
                 y = y+y_step;
-                t.Name = "textBox" + i.ToString();
+                textBox[i].Name = "textBox" + i.ToString();
                 //t.Text = "textBox" + i.ToString();
-                t.Location = new Point(x, y);
-                t.Width = w;
-                t.Font = new Font("Arial", F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                frm.Controls.Add(t);
+                textBox[i].Location = new Point(x, y);
+                textBox[i].Width = w;
+                textBox[i].Font = new Font("Arial", F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+                frm.Controls.Add(textBox[i]);
 
             }
 

@@ -27,16 +27,15 @@ namespace SuperJet_3._1
             labels = new Label[count];
             for (int i = 0; i < count; i++)
             {
-                var l = new Label();
+                labels[i] = new Label();
                 x = x + x_step;
                 y = y + y_step;
-                //t.Name = "textBox" + i.ToString();
-                l.Text = "labels" + i.ToString();
-                l.Location = new Point(x, y);
-                l.Width = w;
-                l.AutoSize = true;
-                l.Font = new Font("Arial", F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                frm.Controls.Add(l);
+                labels[i].Text = "label_" + i.ToString();
+                labels[i].Location = new Point(x, y);
+                labels[i].Width = w;
+                labels[i].AutoSize = true;
+                labels[i].Font = new Font("Arial", F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+                frm.Controls.Add(labels[i]);
 
             }
 
