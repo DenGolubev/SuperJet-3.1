@@ -6,7 +6,7 @@ using System;
 
 namespace SuperJet_3._1
 {
-    class Class_Form_report_stuff: Class_Form_report_svod
+    class Class_Form_report_stuff: Class_BaseForm
     {
         TextBox[] textBoxes;
 
