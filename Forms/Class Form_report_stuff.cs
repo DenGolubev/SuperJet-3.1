@@ -2,14 +2,12 @@
 using System.Windows.Forms;
 using SuperJet_3._1.Graphic;
 using System.Drawing;
-using System;
 
 namespace SuperJet_3._1
 {
     class Class_Form_report_stuff: Class_BaseForm
     {
-        TextBox[] textBoxes;
-
+        
         public Class_Form_report_stuff() //Карточка эффективности сотрудника
         {
             //KPI — это коэффициент, определяющий эффективность работы того или иного предприятия: насколько оно удачно функционирует, достигает ли поставленных целей.
@@ -78,18 +76,18 @@ namespace SuperJet_3._1
             new My_label(this, "90%", 20F, Color.Green, 478, 386); //Конвертация ТВ
 
             // TextBox "Факт" фактическое значение
-            My_textbox t_box1 = new My_textbox(this, false, 588, 184, 50);  // ТТ 24 часа
-            My_textbox t_box2 = new My_textbox(this, false, 588, 234, 50); // Повторные ТТ
-            My_textbox t_box3 = new My_textbox(this, false, 588, 284, 50); // План продаж
-            My_textbox t_box4 = new My_textbox(this, false, 588, 334, 50); //Конвертация интернет
-            My_textbox t_box5 = new My_textbox(this, false, 588, 384, 50); //Конвертация ТВ
+            My_textbox t_box1 = new My_textbox(this, false, 20, 588, 184, 50);  // ТТ 24 часа
+            My_textbox t_box2 = new My_textbox(this, false, 20, 588, 234, 50); // Повторные ТТ
+            My_textbox t_box3 = new My_textbox(this, false, 20, 588, 284, 50); // План продаж
+            My_textbox t_box4 = new My_textbox(this, false, 20, 588, 334, 50); //Конвертация интернет
+            My_textbox t_box5 = new My_textbox(this, false, 20, 588, 384, 50); //Конвертация ТВ
 
             // TextBox "Индекс KPI" 
-            My_textbox t_box6 = new My_textbox(this, false, 690, 184, 50);  // ТТ 24 часа
-            My_textbox t_box7 = new My_textbox(this, false, 690, 234, 50); // Повторные ТТ
-            My_textbox t_box8 = new My_textbox(this, false, 690, 284, 50); // План продаж
-            My_textbox t_box9 = new My_textbox(this, false, 690, 334, 50); //Конвертация интернет
-            My_textbox t_box10 = new My_textbox(this, false, 690, 384, 50); //Конвертация ТВ
+            My_textbox t_box6 = new My_textbox(this, false, 20, 690, 184, 50);  // ТТ 24 часа
+            My_textbox t_box7 = new My_textbox(this, false, 20, 690, 234, 50); // Повторные ТТ
+            My_textbox t_box8 = new My_textbox(this, false, 20, 690, 284, 50); // План продаж
+            My_textbox t_box9 = new My_textbox(this, false, 20, 690, 334, 50); //Конвертация интернет
+            My_textbox t_box10 = new My_textbox(this, false, 20, 690, 384, 50); //Конвертация ТВ
 
 
 

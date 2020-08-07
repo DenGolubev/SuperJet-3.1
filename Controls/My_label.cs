@@ -15,6 +15,7 @@ namespace SuperJet_3._1
             this.Location = new Point(x, y);
             frm.Controls.Add(this);
         }
+
     }
 
     class My_labelArray : Label

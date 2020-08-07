@@ -38,55 +38,55 @@ namespace SuperJet_3._1
 
             //Уникальный номер наряда label1 + textBox1
             label1 = new My_label(this, "Уникальный номер наряда", 20F, Color.Black, 10, 100);
-            textBox1 = new My_textbox(this, true, 450, 100, 300);
+            textBox1 = new My_textbox(this, true, 20, 450, 100, 300);
 
             //Уникальный номер наряда label2 + textBox2
             label2 = new My_label(this, "Табельный номер сотрутдника", 20F, Color.Black, 10, 150);
-            textBox2 = new My_textbox(this, true, 450, 150, 300);
+            textBox2 = new My_textbox(this, true, 20, 450, 150, 300);
 
             //Уникальный номер наряда label3 + textBox3
             label3 = new My_label(this, "Табельный номер сотрутдника", 20F, Color.Black, 10, 200);
-            textBox3 = new My_textbox(this, true, 450, 200, 300);
+            textBox3 = new My_textbox(this, true, 20, 450, 200, 300);
 
             // Кнопка приема нарядов
-            button1 = new My_Button(this, "Принять наряды", 10, 250, 740, 40);
+            button1 = new My_Button(this, "Принять наряды", 12, 10, 250, 740, 40);
             button1.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             button1.BackColor = Color.LightGreen;
 
             //--------------------------------------------------------------------------------------
 
             // Кнопка передать курьеру
-            button1 = new My_Button(this, "Передать курьеру", 10, 330, 200, 80);
+            button1 = new My_Button(this, "Передать курьеру", 12, 10, 330, 200, 80);
             button1.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             button1.BackColor = Color.Yellow;
 
             // Кнопка возврат
-            button1 = new My_Button(this, "Возврат", 10, 430, 200, 80);
+            button1 = new My_Button(this, "Возврат", 12, 10, 430, 200, 80);
             button1.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             button1.BackColor = Color.Red;
 
             //Всего нарядов к сдаче label4 + textBox4
-            label4 = new My_label(this, "Всего нарядов к сдаче", 20F, Color.Black, 250, 330);
-            textBox4 = new My_textbox(this, false, 650, 330, 100);
+            label4 = new My_label(this, "Всего нарядов к сдаче", 20, Color.Black, 250, 330);
+            textBox4 = new My_textbox(this, false, 20, 650, 330, 100);
             textBox4.BorderStyle = BorderStyle.FixedSingle;
             textBox4.TextAlign = HorizontalAlignment.Center;
                         
 
             //Принято нарядов label5 + textBox5
-            label5 = new My_label(this, "Принято нарядов", 20F, Color.Black, 250, 380);
-            textBox5 = new My_textbox(this, false, 650, 380, 100);
+            label5 = new My_label(this, "Принято нарядов", 20, Color.Black, 250, 380);
+            textBox5 = new My_textbox(this, false, 20, 650, 380, 100);
             textBox5.BorderStyle = BorderStyle.FixedSingle;
             textBox5.TextAlign = HorizontalAlignment.Center;
 
             //Передано нарядов курьеру label6 + textBox6
-            label6 = new My_label(this, "Передано нарядов курьеру", 20F, Color.Black, 250, 430);
-            textBox6 = new My_textbox(this, false, 650, 430, 100);
+            label6 = new My_label(this, "Передано нарядов курьеру", 20, Color.Black, 250, 430);
+            textBox6 = new My_textbox(this, false, 20, 650, 430, 100);
             textBox6.BorderStyle = BorderStyle.FixedSingle;
             textBox6.TextAlign = HorizontalAlignment.Center;
 
             //Возвращено нарядов label7 + textBox7
-            label7 = new My_label(this, "Возвращено нарядов", 20F, Color.Black, 250, 480);
-            textBox7 = new My_textbox(this, false, 650, 480, 100);
+            label7 = new My_label(this, "Возвращено нарядов", 20, Color.Black, 250, 480);
+            textBox7 = new My_textbox(this, false, 20, 650, 480, 100);
             textBox7.BorderStyle = BorderStyle.FixedSingle;
             textBox7.TextAlign = HorizontalAlignment.Center;
             

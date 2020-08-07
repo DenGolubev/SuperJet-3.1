@@ -31,29 +31,29 @@ namespace SuperJet_3._1
             //Фамилия label1 + textbox1
             label1 = new My_label(this, "Фамилия", 16F, Color.Black, 20, 120);
             label1.ForeColor = Color.LightSkyBlue;
-            textbox1 = new My_textbox(this, true, 250, 120, 250);
+            textbox1 = new My_textbox(this, true, 16, 250, 120, 250);
             textbox1.BackColor = Color.LightSkyBlue;
 
             //Имя label2 + textbox2
             label2 = new My_label(this, "Имя", 16F, Color.Black, 20, 160);
             label2.ForeColor = Color.LightSkyBlue;
-            textbox2 = new My_textbox(this, true, 250, 160, 250);
+            textbox2 = new My_textbox(this, true, 16, 250, 160, 250);
             textbox2.BackColor = Color.LightSkyBlue;
 
             //Отчество label3 + textbox3
             label3 = new My_label(this, "Отчество", 16F, Color.Black, 20, 200);
             label3.ForeColor = Color.LightSkyBlue;
-            textbox3 = new My_textbox(this, true, 250, 200, 250);
+            textbox3 = new My_textbox(this, true, 16, 250, 200, 250);
             textbox3.BackColor = Color.LightSkyBlue;
 
             //Табельный номер
             label4 = new My_label(this, "Табельный номер", 16F, Color.Black, 20, 240);
             label4.ForeColor = Color.LightSkyBlue;
-            textbox4 = new My_textbox(this, true, 250, 240, 250);
+            textbox4 = new My_textbox(this, true, 16, 250, 240, 250);
             textbox4.BackColor = Color.LightSkyBlue;
 
             //Кнопка Принять
-            button1 = new My_Button(this, "Принять", 400, 300, 100, 50);
+            button1 = new My_Button(this, "Принять", 12, 400, 300, 100, 50);
             button1.BackColor = Color.LightSkyBlue;
          
         }
