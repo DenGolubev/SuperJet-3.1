@@ -65,6 +65,10 @@
     <Compile Include="Forms\Class Form_report_stuff.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Class Form_return_orders.cs" />
+    <Compile Include="Forms\Class Form_search_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Class Form_Stuff_out.cs">
       <SubType>Form</SubType>
     </Compile>
