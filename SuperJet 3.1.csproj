@@ -53,6 +53,9 @@
     <Compile Include="Controls\My_listbox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\My_timer.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\Class BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>

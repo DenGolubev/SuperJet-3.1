@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace SuperJet_3._1
 {
-    class Class_Form_return_orders : Class_BaseForm
+    class Class_Form_return_orders: Class_BaseForm
     {
         public Class_Form_return_orders()
         {
