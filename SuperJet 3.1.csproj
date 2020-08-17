@@ -111,6 +111,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TXT\Class_txt.cs" />
     <EmbeddedResource Include="Forms\Class Form_report_stuff.resx">
       <DependentUpon>Class Form_report_stuff.cs</DependentUpon>
     </EmbeddedResource>

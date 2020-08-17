@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using SuperJet_3._1.Controls;
+using System.IO;
 using SuperJet_3._1.Graphic;
 
 /*
@@ -62,19 +62,19 @@ namespace SuperJet_3._1
 
             //Уникальный номер наряда label1 + textBox1
             label1 = new My_label(this, "Уникальный номер наряда", 20F, Color.Black, 10, 100);
-            textBox1 = new My_textbox(this, true, 20, 450, 100, 300);
+            textBox1 = new My_textbox(this, true, 18F, 450, 100, 300);
             textBox1.KeyPress += TextBox1_KeyPress;
             //Timer timer1 = new My_timer();
             
 
             //Уникальный номер наряда label2 + textBox2
             label2 = new My_label(this, "Табельный номер сотрутдника", 20F, Color.Black, 10, 150);
-            textBox2 = new My_textbox(this, true, 20, 450, 150, 300);
+            textBox2 = new My_textbox(this, true, 18F, 450, 150, 300);
             textBox2.KeyPress += TextBox2_KeyPress;
 
             //Уникальный номер наряда label3 + textBox3
             label3 = new My_label(this, "Табельный номер сотрутдника", 20F, Color.Black, 10, 200);
-            textBox3 = new My_textbox(this, true, 20, 450, 200, 300);
+            textBox3 = new My_textbox(this, true, 18F, 450, 200, 300);
             textBox3.KeyPress += TextBox3_KeyPress;
 
             // Кнопка приема нарядов
@@ -88,13 +88,13 @@ namespace SuperJet_3._1
 
             // Кнопка передать курьеру
             button2 = new My_Button(this, "Передать курьеру", 12, 10, 330, 200, 80);
-            button2.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            button2.Font = new Font("Arial", 14F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             button2.BackColor = Color.Yellow;
 
             // Кнопка возврат
             button3 = new My_Button(this, "Возврат", 12, 10, 430, 200, 80);
-            button3.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-            button3.BackColor = Color.Red;
+            button3.Font = new Font("Arial", 14F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            button3.BackColor = Color.Coral;
 
             //Всего нарядов к сдаче label4 + textBox4
             label4 = new My_label(this, "Сдано нарядов", 20, Color.Black, 310, 330);
@@ -126,22 +126,23 @@ namespace SuperJet_3._1
         private void Button1_Click(object sender, EventArgs e)
         {
             timer = new Timer();
-            if (textBox1.Text == "" || textBox2.Text == "") //Проверка на заполнение поля УНН
+            if (textBox1.Text == "" || textBox1.TextLength < 20)
             {
-                if(textBox1.Text == "")
-                {
-                    textBox1.BackColor = Color.Red;
-                    textBox1.Focus();
-                }
-                else if(textBox2.Text == "")
-                {
-                    textBox2.BackColor = Color.Red;
-                    textBox2.Focus();
-                }
-                timer.Interval = 100;
-                timer.Tick += Timer_Tick;
-                timer.Enabled = true;
+                textBox1.BackColor = Color.Red;
+                textBox1.Focus();
             }
+            else if (textBox2.Text == "" || textBox2.TextLength < 6)
+            {
+                textBox2.BackColor = Color.Red;
+                textBox2.Focus();
+            }
+            else
+            {
+               new read_write_txt(textBox1.Text, textBox2.Text);
+            }
+            timer.Interval = 100;
+            timer.Tick += Timer_Tick;
+            timer.Enabled = true;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
