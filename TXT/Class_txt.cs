@@ -10,7 +10,7 @@ namespace SuperJet_3._1
 {
     class read_write_txt
     {
-        string filename = "C:\\Users\\Denis\\Desktop\\test.txt";
+        string filename = Application.StartupPath + "//test.txt";
         public read_write_txt(string t_box1, string t_box2)
         {
             

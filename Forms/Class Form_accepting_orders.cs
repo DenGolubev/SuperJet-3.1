@@ -64,8 +64,9 @@ namespace SuperJet_3._1
             label1 = new My_label(this, "Уникальный номер наряда", 20F, Color.Black, 10, 100);
             textBox1 = new My_textbox(this, true, 18F, 450, 100, 300);
             textBox1.KeyPress += TextBox1_KeyPress;
+           
             //Timer timer1 = new My_timer();
-            
+
 
             //Уникальный номер наряда label2 + textBox2
             label2 = new My_label(this, "Табельный номер сотрутдника", 20F, Color.Black, 10, 150);
@@ -73,9 +74,9 @@ namespace SuperJet_3._1
             textBox2.KeyPress += TextBox2_KeyPress;
 
             //Уникальный номер наряда label3 + textBox3
-            label3 = new My_label(this, "Табельный номер сотрутдника", 20F, Color.Black, 10, 200);
-            textBox3 = new My_textbox(this, true, 18F, 450, 200, 300);
-            textBox3.KeyPress += TextBox3_KeyPress;
+            //label3 = new My_label(this, "Табельный номер сотрутдника", 20F, Color.Black, 10, 200);
+            //textBox3 = new My_textbox(this, true, 18F, 450, 200, 300);
+            //textBox3.KeyPress += TextBox3_KeyPress;
 
             // Кнопка приема нарядов
             button1 = new My_Button(this, "Принять наряды", 12, 10, 250, 740, 40);
@@ -126,7 +127,7 @@ namespace SuperJet_3._1
         private void Button1_Click(object sender, EventArgs e)
         {
             timer = new Timer();
-            if (textBox1.Text == "" || textBox1.TextLength < 20)
+            if (textBox1.Text == "" || textBox1.TextLength < 19)
             {
                 textBox1.BackColor = Color.Red;
                 textBox1.Focus();
@@ -138,7 +139,11 @@ namespace SuperJet_3._1
             }
             else
             {
-               new read_write_txt(textBox1.Text, textBox2.Text);
+                textBox1.Text = textBox1.Text.Substring(0, 19);
+                new read_write_txt(textBox1.Text, textBox2.Text);
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox1.Focus();
             }
             timer.Interval = 100;
             timer.Tick += Timer_Tick;
@@ -158,16 +163,33 @@ namespace SuperJet_3._1
             {
                 e.Handled = true;
             }
+
+            if (textBox1.TextLength == 20) 
+            {
+                int mem = textBox1.TextLength-1;
+                textBox1.Text = textBox1.Text.Substring(1, mem);
+                textBox2.Focus();
+            }
+            
         }
 
+        
         private void TextBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar <= 47 || e.KeyChar >= 58)
             {
                 e.Handled = true;
             }
-        }
 
+            if (textBox2.TextLength == 13)
+            {
+                int mem = textBox2.TextLength-7;
+                textBox2.Text = textBox2.Text.Substring(6, mem);
+                button1.Focus();
+            }
+            //if (textBox2.TextLength == 6) button1.Focus();
+        }
+        
         private void TextBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar <= 47 || e.KeyChar >= 58)
