@@ -18,8 +18,14 @@ namespace SuperJet_3._1
 
             ToolStripDropDownButton order = new ToolStripDropDownButton("Наряды");
             ToolStripMenuItem accept_order = new ToolStripMenuItem("Принять наряды");
+            ToolStripMenuItem return_order = new ToolStripMenuItem("Вернуть наряды");
+            ToolStripMenuItem search_order = new ToolStripMenuItem("Найти наряды");
             order.DropDownItems.Add(accept_order);
+            order.DropDownItems.Add(return_order);
+            order.DropDownItems.Add(search_order);
             accept_order.Click += Accept_order_Click;
+            return_order.Click += Return_order_Click;
+            search_order.Click += Search_order_Click;
 
             ToolStripDropDownButton stuff = new ToolStripDropDownButton("Сотрудники");
             ToolStripMenuItem stuff_in = new ToolStripMenuItem("Принять сотрудника");
@@ -47,10 +53,24 @@ namespace SuperJet_3._1
             frm.FormClosing += Frm_FormClosing;
         }
 
+        
+        // Формы работы с нарядами
         private void Accept_order_Click(object sender, EventArgs e)
         {
             Form Form_accept_order = new Class_Form_accepting_orders();
             Form_accept_order.Show();
+        }
+
+        private void Return_order_Click(object sender, EventArgs e)
+        {
+            Form Form_return_orders = new Class_Form_return_orders();
+            Form_return_orders.Show();
+        }
+
+        private void Search_order_Click(object sender, EventArgs e)
+        {
+            Form Form_search_orders = new Class_Form_search_orders();
+            Form_search_orders.Show();
         }
 
         // Удаление экземпляра меню при закрытии MDI формы

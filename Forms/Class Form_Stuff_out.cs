@@ -1,33 +1,62 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace SuperJet_3._1
 {
     class Class_Form_Stuff_out: Class_BaseForm
     {
+        private TextBox textbox1;
+        private TextBox textbox2;
+        private TextBox textbox3;
+        private TextBox textbox4;
+        private Label label0;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Button button1;
+
         public Class_Form_Stuff_out()
         {
+            //Свойства формы
             this.Name = "Form Staff out";
-            this.Text = "Form Staff out";
-            this.Size = new System.Drawing.Size(530, 300);
-            Button btn = new My_Button(this, "Уволить", 400, 200, 100, 50);
-            new My_label(this, "Фамилия", 16F, Color.Black, 20, 20);
-            new My_label(this, "Имя", 16F, Color.Black, 20, 60);
-            new My_label(this, "Отчество", 16F, Color.Black, 20, 100);
-            new My_label(this, "Табельный номер", 16F, Color.Black, 20, 140);
-            new My_textbox(this, true, 250, 20, 250);
-            new My_textbox(this, true, 250, 60, 250);
-            new My_textbox(this, true, 250, 100, 250);
-            new My_textbox(this, true, 250, 140, 250);
-            btn.Click += Btn_Click;
-            
+            this.Text = "Форма увольнения сотрудников";
+            this.Size = new Size(530, 400);
+            this.BackColor = Color.RoyalBlue;
 
+            //Оглавление формы
+            label0 = new My_label(this, "Уволить сотрудника", 20F, Color.Black, 120, 20);
+            label0.ForeColor = Color.LightSkyBlue;
+
+            //Фамилия label1 + textbox1
+            label1 = new My_label(this, "Фамилия", 16F, Color.Black, 20, 120);
+            label1.ForeColor = Color.LightSkyBlue;
+            textbox1 = new My_textbox(this, true, 16, 250, 120, 250);
+            textbox1.BackColor = Color.LightSkyBlue;
+
+            //Имя label2 + textbox2
+            label2 = new My_label(this, "Имя", 16F, Color.Black, 20, 160);
+            label2.ForeColor = Color.LightSkyBlue;
+            textbox2 = new My_textbox(this, true, 16, 250, 160, 250);
+            textbox2.BackColor = Color.LightSkyBlue;
+
+            //Отчество label3 + textbox3
+            label3 = new My_label(this, "Отчество", 16F, Color.Black, 20, 200);
+            label3.ForeColor = Color.LightSkyBlue;
+            textbox3 = new My_textbox(this, true, 16, 250, 200, 250);
+            textbox3.BackColor = Color.LightSkyBlue;
+
+            //Табельный номер
+            label4 = new My_label(this, "Табельный номер", 16F, Color.Black, 20, 240);
+            label4.ForeColor = Color.LightSkyBlue;
+            textbox4 = new My_textbox(this, true, 16, 250, 240, 250);
+            textbox4.BackColor = Color.LightSkyBlue;
+
+            //Кнопка Принять
+            button1 = new My_Button(this, "Уволить", 12, 400, 300, 100, 50);
+            button1.BackColor = Color.LightSkyBlue;
         }
 
-        private void Btn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Сотрудник уволен");
-        }
+        
     }
 }
